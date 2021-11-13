@@ -1,0 +1,13 @@
+<h1 style="background-color: white;">Miembros del proyecto</h1>
+
+<table id="customers">
+    <tr>
+      <th>Nombre</th>
+      <th>Rol</th>
+    </tr>
+    <tr *ngFor="let miembro of miembros">
+      <td>{{miembro.username}}</td>
+      <td>{{miembro.rol}}</td>
+    </tr>
+
+</table>

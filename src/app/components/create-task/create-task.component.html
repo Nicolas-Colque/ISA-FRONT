@@ -1,0 +1,40 @@
+
+<form [formGroup]="form" (ngSubmit)="CrearTarea()">
+  <div class="container">
+    <header class="w3-container" style="padding-top:10px">
+      <h1><b><i class="fa fa-dashboard"></i> Crear tarea</b></h1>
+    </header>
+    <label for="email"><b>Nombre de la tarea</b></label>
+    <br>
+    <input type="text" placeholder="Ingrese el nombre de la tarea" name="nombre" required formControlName="nombre_tarea">
+    <br>
+    <label for="user"><b>Descripción de la tarea</b></label>
+    <br>
+    <input type="text" placeholder="Ingrese una descripción de la tarea" name="descripcion" required formControlName="descripcion_tarea">
+    <br>
+    <label for="start"><b>Estado de la tarea </b></label>
+    <br>
+    <div class="box">
+      <select size="1" formControlName="id_estado">
+        <option *ngFor="let estado of estados" value="{{estado.id_estado}}">{{estado.name}}</option>
+      </select>
+    </div>
+    <br>
+    <label for="start"><b>Responsables </b></label>
+    <br>
+    <article *ngFor="let x of usuarios; let i = index">
+      <input type="checkbox" id="feature1" type="checkbox" [value]="x.id_miembro" (change)="onCheckboxChange($event)">
+      <div>
+          <span>
+              <b>{{x.username}}</b> 
+              <br/>
+              {{x.rol}}
+          </span>
+      </div>
+    </article>
+    
+    <hr>
+    <button type="submit" class="registerbtn">Crear tarea</button>
+  </div>
+</form>
+  

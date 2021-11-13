@@ -1,0 +1,15 @@
+<h1 style="background-color: white;">Lista de tareas</h1>
+
+<table id="customers">
+    <tr>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Estado</th>
+    </tr>
+    <tr *ngFor="let tarea of tareas">
+      <td>{{tarea.name_tarea}}</td>
+      <td>{{tarea.description}}</td>
+      <td>{{tarea.name}}</td>
+    </tr>
+
+</table>

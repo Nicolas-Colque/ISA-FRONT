@@ -1,0 +1,28 @@
+<form #userForm="ngForm" (ngSubmit)="RegistrarUsuario()">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Por favor complete el formulario para crear una cuenta</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <br>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required #email="ngModel" [(ngModel)]="usuario.email">
+    <br>
+    <label for="user"><b>User</b></label>
+    <br>
+    <input type="text" placeholder="Enter User" name="username" id="usert" required #username="ngModel" [(ngModel)]="usuario.username">
+    <br>
+    <label for="psw"><b>Password</b></label>
+    <br>
+    <input type="password" placeholder="Enter Password" name="password" id="psw" required #password="ngModel" [(ngModel)]="usuario.password">
+    <br>
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <br>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required #password2="ngModel" [(ngModel)]="passwordr">
+    <br>
+    <small  *ngIf="!(passwordr==usuario.password)"><b>Las contraseñas no coinciden</b></small>
+    <div>
+      <button [disabled]="!(passwordr && usuario.password && usuario.email && usuario.username) && userForm.invalid" type="submit" class="registerbtn">Register</button>
+    </div>
+  </div>
+</form>

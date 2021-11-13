@@ -1,0 +1,27 @@
+<div class="navbarproject">
+  <a class="active" href="/{{id_proyecto}}">{{project_name}}</a>
+  <div class="dropdown2">
+    <button class="dropbtn2">Participantes 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown2-content">
+      <div *ngIf="rol_editor">
+        <a (click)="AddMember()">Agregar miembro</a>
+      </div>
+      <a (click)="ViewMembers()">Listar miembros</a>
+
+    </div>
+  </div> 
+  <div class="dropdown2">
+    <button class="dropbtn2">Tareas 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown2-content">
+      <div *ngIf="rol_editor">
+        <a (click)="CreateTask()" >Crear tarea</a>
+      </div>
+      <a (click)="ViewTask()" >Listar tareas</a>
+    </div>
+  </div> 
+  <a (click)="History()">Historial de Cambios</a>
+</div>
