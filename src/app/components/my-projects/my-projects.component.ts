@@ -42,5 +42,12 @@ export class MyProjectsComponent implements OnInit {
 
     }
   }
+
+  SeleccionarProyecto(e: Event){
+    let x = e.target as HTMLElement;
+    console.log(x.parentElement?.id);
+    let direccion = '/'+x.parentElement?.id;
+    this.router.navigate([direccion]);
+  }
 }
 
