@@ -2,9 +2,12 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+
+//const nodeRoot = path.dirname(require.main.filename);
+//const configPath = path.join(nodeRoot, '../config.json');
+
 export const environment = {
-  production: false,
-  apiUrl: '186.156.92.178:8101'
+  production: false
 };
 
 /*

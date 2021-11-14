@@ -2,7 +2,12 @@ import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
 import { CookieService } from "ngx-cookie-service";
-import { environment } from "src/environments/environment";
+//import { environment } from "src/environments/environment";
+import variables_entorno from '../../variables.json';
+
+interface variables {
+    URL: string;
+}
 
 @Injectable() 
 export class ConsultaService{
@@ -10,7 +15,8 @@ export class ConsultaService{
     private direccionAPI: string;
     
     constructor(private _http:HttpClient, private cookies: CookieService){
-        this.direccionAPI = 'http://'+environment.apiUrl;
+        let x: variables = variables_entorno;
+        this.direccionAPI = 'http://'+x.URL;
     }
     RegistrarUsuario(usuario: any):Observable<any>{
         let respuesta = this._http.post<any>(this.direccionAPI+"/register", usuario);
