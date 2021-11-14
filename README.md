@@ -1,27 +1,23 @@
 # ManageProjectWithModules
+Proyecto creado para la asignatura de Ingeniería de Software Avanzada de la Universidad de Tarapacá. Este repositorio cuenta con la implementación del Front-End del proyecto, el cual fue hecho con [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.5.
+## Requerimientos
 
-## Development server
+* Node v14.x o superior.
+* Angular 12.2.5. o superior.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Instrucciones
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. Clonar el repositorio en el directorio donde se desee alojar el proyecto.
 
-## Build
+2. Abrir una consola en la dirección donde se encuentra el proyecto y ejecutar el siguiente comando para instalar las dependecias con node `npm i -y`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. Para ejecutar el servidor ejecute el siguiendo comando en la consola 'ng serve' para poder ver el proyecto en buscador vaya a `http://localhost:4200/`. Por defecto de angular va utilizar el puerto 4200. Al ejecutar el servidor la aplicación se recargará automaticamente si se realizan cambios en los archivos de origen.
 
-## Running unit tests
+## Contribución
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Todas las contribuciones son bienvenidas, sin embargo, este proyecto es un prototipo realizado para una asignatura de la universidad, así que no todas van a estar en la versión final...
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
