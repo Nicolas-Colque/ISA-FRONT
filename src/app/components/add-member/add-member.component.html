@@ -3,21 +3,15 @@
       <header class="w3-container" style="padding-top:22px">
         <h1><b><i class="fa fa-dashboard"></i> Agregar Miembro</b></h1>
     </header>
-      <br>
       <label for="email"><b>Nombre del usuario</b></label>
-      <br>
-      <input type="text" placeholder="Ingrese el nombre del nuevo participante" name="participante" required formControlName="usuario">
-      <br>
-            
+      <input type="text" placeholder="Ingrese el nombre del nuevo participante" name="participante" required formControlName="usuario">     
       <label for="user"><b>Rol del miembro</b></label>
-      <br>          
       <div class="box">
         <select size="1" formControlName="rol">
           <option *ngFor="let rol of roles" value="{{rol.id_rol}}">{{rol.name}}</option>
         </select>
       </div>
-  
-      <hr>      
-      <button type="submit" class="registerbtn">Agregar Miembro</button>
+      <br>     
+      <button type="submit" class="button button1">Agregar Miembro</button>
     </div>
   </form>

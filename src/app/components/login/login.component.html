@@ -3,17 +3,12 @@
     <div class="container">
       <h1>Iniciar Sesión</h1>
       <p>Por favor complete el formulario para iniciar sesión.</p>
-      <hr>
-  
-      <label for="user"><b>User</b></label>
       <br>
-      <input type="text" placeholder="Enter User" name="username" id="usert" required #username="ngModel" [(ngModel)]="usuario.username">
-      <br>
-      <label for="psw"><b>Password</b></label>
-      <br>
-      <input type="password" placeholder="Enter Password" name="psw" id="psw" required #password="ngModel" [(ngModel)]="usuario.password">
-      <br>
-      <button type="submit" class="registerbtn">Iniciar Sesión</button>
+      <label for="user"><b>Usuario</b></label>
+      <input type="text" placeholder="Ingrese el usuario" name="username" id="usert" required #username="ngModel" [(ngModel)]="usuario.username">
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingrese la contraseña" name="psw" id="psw" required #password="ngModel" [(ngModel)]="usuario.password">
+      <button type="submit" class="button button1">Iniciar Sesión</button>
     </div>
   
   </form>
