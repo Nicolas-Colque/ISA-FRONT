@@ -1,11 +1,13 @@
-<h1 style="background-color: white;">Lista de tareas</h1>
 
-<table id="customers">
+<h1>Tareas del proyecto</h1>
+<table>
+  <thead>
     <tr>
       <th>Nombre</th>
       <th>Descripción</th>
       <th>Estado</th>
     </tr>
+<<<<<<< HEAD
     <tr *ngFor="let tarea of tareas">
       <td>{{tarea.name_tarea}}</td>
       <td>{{tarea.description}}</td>
@@ -18,3 +20,14 @@
       Hola 2
     </p>
 </table>
+=======
+  </thead>
+  <tbody *ngFor="let tarea of tareas">
+      <tr>
+          <td>{{tarea.name_tarea}}</td>
+          <td>{{tarea.description}}</td>
+          <td>{{tarea.name}}</td>
+      </tr>
+  </tbody>
+</table>
+>>>>>>> mostrar

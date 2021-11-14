@@ -1,5 +1,5 @@
 <div class="navbarproject">
-  <a class="active" href="/{{id_proyecto}}">{{project_name}}</a>
+  <a id="project-name" class="active" href="/{{id_proyecto}}">{{project_name}}</a>
   <div class="dropdown2">
     <button class="dropbtn2">Participantes 
       <i class="fa fa-caret-down"></i>
@@ -8,7 +8,7 @@
       <div *ngIf="rol_editor">
         <a (click)="AddMember()">Agregar miembro</a>
       </div>
-      <a (click)="ViewMembers()">Listar miembros</a>
+        <a (click)="ViewMembers()">Listar miembros</a>
 
     </div>
   </div> 

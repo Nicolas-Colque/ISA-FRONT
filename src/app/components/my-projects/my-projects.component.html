@@ -1,9 +1,15 @@
-<h1 style="background-color: white;">Mis proyectos</h1>
-<a *ngFor="let proyecto of proyectos" routerLink="/{{proyecto.id_proyecto}}">
-<div >
-    <div class="cardy">
-        <h4><b>Nombre: {{proyecto.name}}</b></h4> 
-        <p>Descripción: {{proyecto.description}}</p> 
-    </div> 
-</div>
-</a>
+<h1>Mis proyectos</h1>
+<table>
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th colspan="2">Descripción</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let proyecto of proyectos">
+        <tr id="{{proyecto.id_proyecto}}" (click)="SeleccionarProyecto($event)">
+            <td>{{proyecto.name}}</td>
+            <td>{{proyecto.description}}</td>
+        </tr>
+    </tbody>
+  </table>
