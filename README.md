@@ -11,7 +11,7 @@ Proyecto creado para la asignatura de Ingeniería de Software Avanzada de la Uni
 
 1. Clonar el repositorio en el directorio donde se desee alojar el proyecto.
 
-2. Abrir una consola en la dirección donde se encuentra el proyecto y ejecutar el siguiente comando para instalar las dependecias con node 'npn i -y'
+2. Abrir una consola en la dirección donde se encuentra el proyecto y ejecutar el siguiente comando para instalar las dependecias con node `npm i -y`
 
 3. Para ejecutar el servidor ejecute el siguiendo comando en la consola 'ng serve' para poder ver el proyecto en buscador vaya a `http://localhost:4200/`. Por defecto de angular va utilizar el puerto 4200. Al ejecutar el servidor la aplicación se recargará automaticamente si se realizan cambios en los archivos de origen.
 
